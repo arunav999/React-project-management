@@ -1,4 +1,5 @@
 import React from "react";
+import Input from "./Input.jsx";
 
 export default function NewProject() {
   return (
@@ -12,18 +13,9 @@ export default function NewProject() {
         </li>
       </menu>
       <div>
-        <p>
-          <label htmlFor="title">Title</label>
-          <input type="text" id="title" />
-        </p>
-        <p>
-          <label htmlFor="description">Description</label>
-          <textarea name="desc" id="description"></textarea>
-        </p>
-        <p>
-          <label htmlFor="dueDate">Due Date</label>
-          <input type="text" id="dueDate" />
-        </p>
+        <Input label="Title" />
+        <Input label="Description" textarea />
+        <Input label="Due Date" />
       </div>
     </div>
   );
