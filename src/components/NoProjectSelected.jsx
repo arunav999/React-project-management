@@ -16,6 +16,10 @@ export default function NoProjectSelected({ onStartAddProject }) {
       <p className="text-stone-400 mb-4">
         Select a project or get started with a new one
       </p>
+      <p className="text-stone-400 mb-4">
+        (Note: This project is built using React and functions solely on the
+        front end, without a back-end.)
+      </p>
       <p className="mt-8">
         <Button onClick={onStartAddProject}>Create a new project</Button>
       </p>
